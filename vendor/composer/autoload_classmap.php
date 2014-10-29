@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controllers\\Admin\\AuthController' => $baseDir . '/app/controllers/admin/AuthController.php',
+    'App\\Controllers\\Admin\\PagesController' => $baseDir . '/app/controllers/admin/PagesController.php',
+    'App\\Services\\Validators\\PageValidator' => $baseDir . '/app/services/validators/PageValidator.php',
     'Article' => $baseDir . '/app/models/Article.php',
     'ArticleTableSeeder' => $baseDir . '/app/database/seeds/ArticleTableSeeder.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
@@ -33,6 +35,7 @@ return array(
     'MigrationCartalystSentryInstallUsersGroupsPivot' => $vendorDir . '/cartalyst/sentry/src/migrations/2012_12_06_225945_migration_cartalyst_sentry_install_users_groups_pivot.php',
     'Page' => $baseDir . '/app/models/Page.php',
     'PageTableSeeder' => $baseDir . '/app/database/seeds/PageTableSeeder.php',
+    'SentrySeeder' => $baseDir . '/app/database/seeds/SentrySeeder.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'User' => $baseDir . '/app/models/User.php',
