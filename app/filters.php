@@ -48,6 +48,13 @@ Route::filter('auth', function()
 	}
 });
 
+Route::filter('auth.admin', function()
+{
+	if ( ! Sentry::check()) {
+		return Redirect::route('admin.login');
+	}
+});
+
 
 Route::filter('auth.basic', function()
 {
@@ -88,3 +95,4 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
